@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Browserclass {
 	
 	public static  WebDriver driver;
-	
+	//browsers
 	
 	public  WebDriver browserlaunch(WebDriver driver , String browser , String url ) throws InterruptedException 
 	{
@@ -30,7 +30,6 @@ public class Browserclass {
 		}else if(browser.equals("explore")) {
 			System.setProperty("webdriver.chrome.driver","./softwares/chromedriver.exe");
 			driver= new InternetExplorerDriver();
-			
 			
 		}else {
 			System.out.println("this browser is not present");
