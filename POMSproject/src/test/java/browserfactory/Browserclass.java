@@ -34,12 +34,12 @@ public class Browserclass {
 		}else {
 			System.out.println("this browser is not present");
 		}
-		//added line
+		
 		
 		driver.get(url);
 		return driver;
 	}
-	
+	//close browser
 	public static void quit(WebDriver driver) {
 		driver.close();
 	}
